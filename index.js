@@ -3,7 +3,8 @@ const app = express();
 
 app.get("/", function(req, res) {
     let time = new Date();
-    res.send(time);
+    let time_2 = time.toGMTString();
+    res.send(time_2);
 })
 
 app.listen(process.env.PORT || 5000)
