@@ -2,14 +2,15 @@ const express = require("express");
 const app = express();
 
 app.get("/", function(req, res) {
-    let time = Date();
-    // let time_2 = time.toGMTString();
-    res.send(time);
+    let time = new Date();
+    let time_2 = time.toGMTString();
+    res.send(time_2);
 })
 
 app.get("/local", function(req, res) {
-    let time_3 = Date()
-    res.send(time_3);
+    res.send(exports.myDateTime() = function() {
+        return Date();
+    });
 })
 
 // app.get("/local")
