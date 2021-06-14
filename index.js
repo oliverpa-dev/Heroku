@@ -8,7 +8,7 @@ app.get("/", function(req, res) {
 })
 
 app.get("/local", function(req, res) {
-    let time_3 = Date()
+    let time_3 = new Date()
     let time_4 = time_3.toGMTString();
     res.send(time_4);
 })
