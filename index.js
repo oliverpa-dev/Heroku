@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 
 app.get("/", function(req, res) {
-    let time = new Date();
+    let time = Date();
     // let time_2 = time.toGMTString();
     res.send(time);
 })
